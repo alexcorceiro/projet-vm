@@ -1,0 +1,23 @@
+
+
+.res-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+.res-items{
+    display: flex;
+}
+
+.res-img{
+    height: 50px;
+    width: 50px;
+}
+
+.res-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}

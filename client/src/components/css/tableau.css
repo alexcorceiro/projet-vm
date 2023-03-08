@@ -1,0 +1,28 @@
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title{
+  display: flex;
+  justify-content: center;
+}
+
+.modal-form-label{
+  padding: 10px;
+}
+
+.modal-form-input{
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.modal-form-btn{
+  border: none;
+  background-color: rgb(13, 63, 246);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 15px;
+}

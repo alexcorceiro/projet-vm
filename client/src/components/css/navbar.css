@@ -1,0 +1,57 @@
+.navbar{
+    background-color: rgb(10, 10, 234);
+    height: 80px;
+    width: 100%;
+}
+
+.navbody{
+    display: flex;
+    align-items: center;
+}
+
+.nav-champ1{
+    margin-top: 10px;
+    color: white;
+    flex: 3;
+    margin-left: 20px;
+}
+
+.nav-champ2{
+    margin-top: 20px;
+    flex: 1;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 8px;
+}
+
+.nav-item_cp{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+.nav-item-input{
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    margin-left: 3px;
+}
+
+.nav-item-btn{
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(0, 47, 255);
+}
+
+.nav-item-form{
+    background-color: rgb(32, 98, 228);
+    display: flex;
+    border-radius: 5px;
+}
