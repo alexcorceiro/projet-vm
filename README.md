@@ -37,7 +37,7 @@ Ce projet a été créé en utilisant les technologies suivantes.
 #### Dase de donnée
 MongoDB (MongoDB Community)
 
-## Configuration and Setup
+## Configuration et installation
 Pour exécuter ce projet localement, il suffit de forker et de cloner le dépôt ou de télécharger le fichier zip et de le décompresser sur votre machine.
 - Ouvrez le projet dans votre éditeur de code préféré..
 - Aller dans terminal -> Nouveau terminal (si vous utilisez VS code)
@@ -74,7 +74,7 @@ $ npm install (pour installer les dépendances côté server)
 J'ai l'intention de continuer à ajouter des fonctionnalités à cette application, donc si vous l'aimez, donnez-lui une étoile, cela m'encouragera à continuer à améliorer le projet.
 
 
-## Autheur
+## Auteur
 
 - Alex Corceiro
 - Biraveen Sivaharan
