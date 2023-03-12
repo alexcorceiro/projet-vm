@@ -4,7 +4,7 @@
 
 # Le but de notre Projet
 
-- Réaliser un projet complet  intégrant les enseignements dispensÃ©s durant la session decours en utilisant les outils étudiés pendant le cursus, ou en y intégrant des outils au choix et innovant.
+- Réaliser un projet complet  intégrant les enseignements dispensés durant la session decours en utilisant les outils étudiés pendant le cursus, ou en y intégrant des outils au choix et innovant.
 
 # Par ou commencer ?
 
@@ -14,7 +14,7 @@
 - Vagrant : Pour la création de notre machine virtuelle grace à l'aide d'un script qui permettra de nous créer la machine virtuelle de facon autonome.
 - Ansible : Pour installer les logiciels de facon automatique grace à l'aide  d'un script.
 - Docker : Permettra de deployer notre application web.
-- MongoDB : Base de donnée qui permettra de stocker les donnÃ©es des utilisateurs.
+- MongoDB : Base de donnée qui permettra de stocker les données des utilisateurs.
 - React : Framework qui regroupe l'HTML,CSS et javascript qui nous permettra de concevoir notre future application.
 - VMware : Logiciel pour créer nos machines virtuelles
 - Ubuntu : Système d'exploitation GNU/Linux fondé sur Debian.
@@ -44,7 +44,7 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ```
 # 3eme Etapes : Mise en place de vagrant
-- Dans cette Ã©tape, nous allons mettre en place un vagrantfile qui va nous servir pour créer notre machine virtuelle distante. Pour cela voici le script :
+- Dans cette étape, nous allons mettre en place un vagrantfile qui va nous servir pour créer notre machine virtuelle distante. Pour cela voici le script :
 ```
  Vagrant.configure("2") do |config|
   # Configuration de la box
@@ -80,7 +80,7 @@ vagrant up
   hosts: 192.168.59.128
   become: true
   tasks:
-    - name: TÃ©lÃ©charger la clé GPG de Microsoft
+    - name: Télécharger la clé GPG de Microsoft
       apt_key:
         url: https://packages.microsoft.com/keys/microsoft.asc
         state: present
