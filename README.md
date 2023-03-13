@@ -31,6 +31,7 @@ Ce projet a été créé en utilisant les technologies suivantes.
 - Mongoose
 - JWT (Pour l'authentification)
 - bcrypt (pour le cryptage des données)
+- cookie-parser(pour genere un cookie)
 
 
 #### Dase de donnée
