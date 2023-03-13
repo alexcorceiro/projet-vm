@@ -1,19 +1,35 @@
 import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
 import "./css/Login.css"
 
-function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const navigate = useNavigate()
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if(email ==="admin@admin.com" && password === "admin"){
-      navigate("/home")
-      }
-    };
+const initialState = {
+  email: "", 
+  password: "", 
+ 
+}
 
+function Login() {
+  const [formData, setFormdata] = useState(initialState)
+  const navigate = useNavigate()
+
+
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+
+    axios.post("http://localhost:5400/api/login", formData)
+    .then(response =>{
+      console.log(response.data.message)
+
+      navigate("/home")
+    } )
+    .catch( err =>{
+      console.log(err)
+    })
+  }
+  const handleChange = (e) => {
+    setFormdata({...formData, [e.target.name] : e.target.value})
+  }
     const handleReg = () => {
       navigate("/register")
     }
@@ -21,6 +37,7 @@ function Login() {
     const handleforgot = () => {
       navigate("/forgotpassword")
     }
+
   return (
     <div className="login-page">
       <div className='login-container'>
@@ -28,22 +45,14 @@ function Login() {
         <h1 className='login-title'>Connexion</h1>
         <div className="form-group">
           <label className='login-subtitle' >Adresse email</label>
-          <input className='login-input'
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
+          <input className='login-input' type="email"
+          name='email' onChange={handleChange} value={formData.email}
           />
         </div>
         <div className="form-group">
           <label className='login-subtitle' >Mot de passe</label>
-          <input className='login-input'
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
+          <input className='login-input' type="password"
+         name='password' onChange={handleChange} value={formData.password}
           />
         </div>
         <button className='login-btn'

@@ -6,7 +6,7 @@ const { remove } = require("../model/userSchema");
 exports.register = async(req, res, next ) => {
     try{
 
-      const { prenom , nom , email, password} = req.body
+      const { prenom , nom , email, password, role} = req.body
 
         if(!prenom || !nom || !email || !password){
             res.status(400)
@@ -27,7 +27,8 @@ exports.register = async(req, res, next ) => {
             prenom,
             nom,
             email,
-            password : hashedPassword
+            password : hashedPassword,
+            role
         })
 
         const token = generateToken(user._id)
@@ -41,10 +42,10 @@ exports.register = async(req, res, next ) => {
           });
 
           if (user) {
-            const {_id, prenom , nom , email, password} = user;
+            const {_id, prenom , nom , email, password, role} = user;
         
             res.status(201).json({
-               _id, prenom , nom , email,  password
+               _id, prenom , nom , email,  password , role
             })
         }
     
@@ -94,7 +95,7 @@ exports.login = async (req, res, next) => {
         });
       } else {
         res.status(500);
-        throw new Error("Something went wrong, please try again");
+        throw new Error('erreur de lors de la connexion');
       }
 
     }catch(err){

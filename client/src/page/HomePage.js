@@ -17,7 +17,7 @@ function HomePage() {
         </div>
         <div className='homebody'>
            <div className='home-champ1'>
-           <Container style={{marginTop : 80, maxWidth: "87%"}}>
+           <Container style={{marginTop : 30, maxWidth: "87%"}}>
         <Grid container spacing={3} >
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{backgroundColor: "green", color: "white"}}>
