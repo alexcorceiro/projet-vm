@@ -101,4 +101,9 @@ vagrant up
 ansible-playbook playbook.yml
 ```
 
+# 2eme partie : Docker
+
+- Le but de docker est de lancer notre projet via des lignes de commande en prenant en compte les logiciels qui seront necesaire d'etre installé.
+
+
 
