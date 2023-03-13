@@ -12,7 +12,6 @@ Il s'agit d'un projet parallèle sur lequel j'ai travaillé. Une application de 
 - analiser les les interaction faite .
 - gestion des status des comte 
 - Enregistrement de plusieurs type d' utilisateurs
-- Authentification par jsonwebtoken (jwt)
 
 ![alt text](https://github.com/alexcorceiro/projet-vm/blob/537f14a97f0e07b8ea9ba8fcc88e48d7eb0d0dfd/projet-vm.png)
 
